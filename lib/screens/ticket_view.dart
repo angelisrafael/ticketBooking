@@ -54,7 +54,7 @@ class TicketView extends StatelessWidget {
                               mainAxisSize: MainAxisSize.max,
                               children: List.generate(
                                   (constraints.constrainWidth() / 6).floor(),
-                                  (index) => SizedBox(
+                                  (index) => const SizedBox(
                                         width: 3,
                                         height: 1,
                                         child: DecoratedBox(
@@ -68,7 +68,7 @@ class TicketView extends StatelessWidget {
                       Center(
                         child: Transform.rotate(
                           angle: 1.5,
-                          child: Icon(
+                          child: const Icon(
                             Icons.local_airport_rounded,
                             color: Colors.white,
                           ),
@@ -76,7 +76,7 @@ class TicketView extends StatelessWidget {
                       ),
                     ],
                   )),
-                  ThickContainer(),
+                  const ThickContainer(),
                   Expanded(child: Container()),
                   Text(
                     "LDN",
@@ -151,7 +151,7 @@ class TicketView extends StatelessWidget {
                     );
                   },
                 )),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                   width: 10,
                   child: DecoratedBox(
@@ -166,7 +166,17 @@ class TicketView extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
+          /*
+          bottom part of the orange cord/ticket
+          */
+          Container(decoration: const BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(10),
+                        bottomRight: Radius.circular(10),
+                      ),
+                    ),)
         ]),
       ),
     );
