@@ -80,21 +80,20 @@ class SearchScreen extends StatelessWidget {
           const AppIconText(icon: Icons.flight_land_rounded, text: "Arrival"),
           Gap(AppLayout.getHeight(20)),
           Container(
-            padding: EdgeInsets.symmetric(
-                vertical: AppLayout.getHeight(18),
-                horizontal: AppLayout.getWidth(15)),
-            decoration: BoxDecoration(
-                color: Color(0xD91130CE),
-                borderRadius: BorderRadius.circular(
-                  AppLayout.getWidth(10),
-                )),
-            child: Center(
-              child: Text(
-                    "find tickets",
-                    style: Styles.textStyle.copyWith(color: Colors.white),
-                  ),
-            )
-          ),
+              padding: EdgeInsets.symmetric(
+                  vertical: AppLayout.getHeight(18),
+                  horizontal: AppLayout.getWidth(15)),
+              decoration: BoxDecoration(
+                  color: Color(0xD91130CE),
+                  borderRadius: BorderRadius.circular(
+                    AppLayout.getWidth(10),
+                  )),
+              child: Center(
+                child: Text(
+                  "find tickets",
+                  style: Styles.textStyle.copyWith(color: Colors.white),
+                ),
+              )),
         ],
       ),
     );
