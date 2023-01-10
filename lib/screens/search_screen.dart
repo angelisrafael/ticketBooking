@@ -1,5 +1,6 @@
 import 'package:app_gringo_teste/utils/app_layout.dart';
 import 'package:app_gringo_teste/utils/app_styles.dart';
+import 'package:app_gringo_teste/widgets/double_text_widget.dart';
 import 'package:app_gringo_teste/widgets/icon_text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -76,9 +77,9 @@ class SearchScreen extends StatelessWidget {
           Gap(AppLayout.getHeight(25)),
           const AppIconText(
               icon: Icons.flight_takeoff_rounded, text: "Departure"),
-          Gap(AppLayout.getHeight(15)),
-          const AppIconText(icon: Icons.flight_land_rounded, text: "Arrival"),
           Gap(AppLayout.getHeight(20)),
+          const AppIconText(icon: Icons.flight_land_rounded, text: "Arrival"),
+          Gap(AppLayout.getHeight(25)),
           Container(
               padding: EdgeInsets.symmetric(
                   vertical: AppLayout.getHeight(18),
@@ -94,6 +95,9 @@ class SearchScreen extends StatelessWidget {
                   style: Styles.textStyle.copyWith(color: Colors.white),
                 ),
               )),
+          Gap(AppLayout.getHeight(40)),
+          const AppDoubleTextWidget(
+              bigText: "Upcoming Flights", smallText: "View all"),
         ],
       ),
     );
