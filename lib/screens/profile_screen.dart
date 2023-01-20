@@ -131,13 +131,15 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: AppLayout.getHeight(25), vertical: AppLayout.getHeight(20)),
+                padding: EdgeInsets.symmetric(
+                    horizontal: AppLayout.getHeight(25),
+                    vertical: AppLayout.getHeight(20)),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     CircleAvatar(
-                      child: Icon(
+                      child:  Icon(
                         FluentSystemIcons.ic_fluent_lightbulb_filament_filled,
                         color: Styles.primaryColor,
                         size: 27,
@@ -153,15 +155,16 @@ class ProfileScreen extends StatelessWidget {
                         Text(
                           "You\'v got a new award",
                           style: Styles.headLineStyle2.copyWith(
-                            fontWeight: FontWeight.bold, color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
                           ),
                         ),
                         Text(
                           "You have 95 flights in a year",
                           style: Styles.headLineStyle2.copyWith(
-                            fontWeight: FontWeight.w500, color: Colors.white.withOpacity(0.9),
-                            fontSize: 16
-                          ),
+                              fontWeight: FontWeight.w500,
+                              color: Colors.white.withOpacity(0.9),
+                              fontSize: 16),
                         )
                       ],
                     )
@@ -171,64 +174,112 @@ class ProfileScreen extends StatelessWidget {
             ],
           ),
           Gap(AppLayout.getHeight(25)),
-          Text("Accumulated miles", style: Styles.headLineStyle2,),
+          Text(
+            "Accumulated miles",
+            style: Styles.headLineStyle2,
+          ),
           Gap(AppLayout.getHeight(20)),
           Container(
             padding: EdgeInsets.symmetric(horizontal: AppLayout.getHeight(15)),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppLayout.getWidth(18)),
-              color: Styles.bgColor,
-              boxShadow: [ BoxShadow(
-                color: Colors.grey.shade200,
-                blurRadius: 1,
-                spreadRadius: 1
-              )]
-            ),
+                borderRadius: BorderRadius.circular(AppLayout.getWidth(18)),
+                color: Styles.bgColor,
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.grey.shade200,
+                      blurRadius: 1,
+                      spreadRadius: 1)
+                ]),
             child: Column(
               children: [
                 Gap(AppLayout.getHeight(15)),
                 Text(
                   "192802",
                   style: TextStyle(
-                    fontSize: 45, color: Styles.TextColor, fontWeight: FontWeight.w600
-                  ),
+                      fontSize: 45,
+                      color: Styles.TextColor,
+                      fontWeight: FontWeight.w600),
                 ),
                 Gap(AppLayout.getHeight(20)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Miles accured", style: Styles.headLineStyle4.copyWith(fontSize: 16),),
-                    Text("20 Jan 2023", style: Styles.headLineStyle4.copyWith(fontSize: 16),),
+                    Text(
+                      "Miles accured",
+                      style: Styles.headLineStyle4.copyWith(fontSize: 16),
+                    ),
+                    Text(
+                      "20 Jan 2023",
+                      style: Styles.headLineStyle4.copyWith(fontSize: 16),
+                    ),
                   ],
                 ),
                 Gap(AppLayout.getHeight(4)),
-                Divider(color: Colors.grey.shade300,),
+                Divider(
+                  color: Colors.grey.shade300,
+                ),
                 Gap(AppLayout.getHeight(4)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: const [
-                    AppColumnLayout(firstText: "23 042", secondText: "Miles", alignment: CrossAxisAlignment.start, isColor: false,),
-                    AppColumnLayout(firstText: "Airline CO", secondText: "Received from", alignment: CrossAxisAlignment.end, isColor: false,)
+                    AppColumnLayout(
+                      firstText: "23 042",
+                      secondText: "Miles",
+                      alignment: CrossAxisAlignment.start,
+                      isColor: false,
+                    ),
+                    AppColumnLayout(
+                      firstText: "Airline CO",
+                      secondText: "Received from",
+                      alignment: CrossAxisAlignment.end,
+                      isColor: false,
+                    )
                   ],
                 ),
                 Gap(AppLayout.getHeight(12)),
-                const AppLayoutBuilderWidget(sections: 12, isColor: false,),
+                const AppLayoutBuilderWidget(
+                  sections: 12,
+                  isColor: false,
+                ),
                 Gap(AppLayout.getHeight(12)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: const [
-                    AppColumnLayout(firstText: "24", secondText: "Miles", alignment: CrossAxisAlignment.start, isColor: false,),
-                    AppColumnLayout(firstText: "McDonal\'s", secondText: "Received from", alignment: CrossAxisAlignment.end, isColor: false,)
+                    AppColumnLayout(
+                      firstText: "24",
+                      secondText: "Miles",
+                      alignment: CrossAxisAlignment.start,
+                      isColor: false,
+                    ),
+                    AppColumnLayout(
+                      firstText: "McDonal\'s",
+                      secondText: "Received from",
+                      alignment: CrossAxisAlignment.end,
+                      isColor: false,
+                    )
                   ],
                 ),
                 Gap(AppLayout.getHeight(12)),
-                const AppLayoutBuilderWidget(sections: 12, isColor: false,),
+                const AppLayoutBuilderWidget(
+                  sections: 12,
+                  isColor: false,
+                ),
                 Gap(AppLayout.getHeight(12)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: const [
-                    AppColumnLayout(firstText: "24", secondText: "Miles", alignment: CrossAxisAlignment.start, isColor: false,),
-                    AppColumnLayout(firstText: "McDonal\'s", secondText: "Received from", alignment: CrossAxisAlignment.end, isColor: false,)
+                    AppColumnLayout(
+                      firstText: "24",
+                      secondText: "Miles",
+                      alignment: CrossAxisAlignment.start,
+                      isColor: false,
+                    ),
+                    AppColumnLayout(
+                      firstText: "McDonal\'s",
+                      secondText: "Received from",
+                      alignment: CrossAxisAlignment.end,
+                      isColor: false,
+                    )
                   ],
                 ),
               ],
@@ -241,9 +292,7 @@ class ProfileScreen extends StatelessWidget {
               child: Text(
                 "How to get more miles",
                 style: Styles.textStyle.copyWith(
-                  color: Styles.primaryColor,
-                  fontWeight: FontWeight.w500
-                ),
+                    color: Styles.primaryColor, fontWeight: FontWeight.w500),
               ),
             ),
           )
