@@ -15,7 +15,7 @@ class AppColumnLayout extends StatelessWidget {
       required this.firstText,
       required this.secondText,
       required this.alignment,
-      required this.isColor})
+      this.isColor})
       : super(key: key);
 
   @override
